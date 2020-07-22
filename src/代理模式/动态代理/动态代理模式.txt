@@ -1,0 +1,10 @@
+通过一个代理类来控制访问 运行时生成代理类
+LogHandler[UserServiceImpl-->UserService[inf]]-->InvocationHandler[inf](系统提供的代理类)
+	
+
+调用
+Proxy.newProxyInstance(classLoader, interfaces, logHandler)-返回值：OBject
+classLoader 被代理者的类加载器
+interfaces  被代理者的接口
+
+每次调用实现类的方法时 都是先走一下LogHandler的invoke方法

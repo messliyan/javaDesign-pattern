@@ -1,0 +1,2 @@
+通过一个代理类来控制访问
+	UserServiceProxy[UserServiceImpl-->UserService[inf]（声明代理方法）](代理者)
